@@ -5,5 +5,8 @@
  */
 int main(void)
 {
+	char interpreter[] = "simple_shell";
+
+	printf("%s\n", interpreter);
 	return (0);
 }
