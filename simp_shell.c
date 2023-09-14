@@ -18,7 +18,7 @@ int main(int argc, char **argv)
 	while (1)
 	{
 		printf("%s ", interpreter);
-		
+
 		if (getline(&shell_lineptr, &n, stdin) == -1)
 		{
 			if (shell_lineptr != NULL)
