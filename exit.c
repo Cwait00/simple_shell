@@ -1,6 +1,6 @@
 #include "main_shell.h"
 
-int __main(void)
+int dear(void)
 {
 	return (0);
 }

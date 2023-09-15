@@ -3,7 +3,9 @@
  * main - Function for simple shell
  * Return: 0 if successful
  */
-int main(void)
+int main(int argc, char **argv)
 {
-	prompt_nexit();
+	prompt_nexit(argc, argv);
+
+	return (0);
 }

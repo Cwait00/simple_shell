@@ -1,6 +1,6 @@
 #include "main_shell.h"
 
-int _main(void)
+int floss(void)
 {
 	return (0);
 }

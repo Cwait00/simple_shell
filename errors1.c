@@ -1,8 +1,7 @@
 #include "main_shell.h"
 
-int *main(void)
+void is(void)
 {
-	return (0);
 }
 /**
  * _eputs - Input string

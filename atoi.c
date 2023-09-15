@@ -1,14 +1,18 @@
 #include "main_shell.h"
 
+void today()
+{
+
+}
 /**
  * interactive - Shell is interactive mode and returns if true
  * @info: struct address
  * Return: 1 if interactive mode, 0 otherwise
  */
-int interactive(info_t *info)
+/*int interactive(info_t *info)
 {
 	return (isatty(STDIN_FILENO) && info->readfd <= 2);
-}
+}*/
 
 /**
  * is_delim - checks if is a delimeter
@@ -16,13 +20,13 @@ int interactive(info_t *info)
  * @delim: The string of the delimeter
  * Return: 1 if true, 0 if false
  */
-int is_delim(char c, char *delim)
+/*int is_delim(char c, char *delim)
 {
 	while (*delim)
 		if (*delim++ == c)
 			return (1);
 	return (0);
-}
+}*/
 
 /**
  * _isalpha - Alphabetic character
@@ -30,13 +34,13 @@ int is_delim(char c, char *delim)
  * Return: 1 if c is alphabetic, 0 otherwise
  */
 
-int _isalpha(int c)
+/*int _isalpha(int c)
 {
 	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 		return (1);
 	else
 		return (0);
-}
+}*/
 
 /**
  * _atoi - A string to an integer
@@ -44,7 +48,7 @@ int _isalpha(int c)
  * Return: 0 if no num in string, converted number otherwise
  */
 
-int _atoi(char *s)
+/*int _atoi(char *s)
 {
 	int i, sign = 1, flag = 0, output;
 	unsigned int r = 0;
@@ -70,4 +74,4 @@ int _atoi(char *s)
 		output = r;
 
 	return (output);
-}
+}*/

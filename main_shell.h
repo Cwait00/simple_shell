@@ -6,14 +6,18 @@
 #include <unistd.h>
 #include <stdlib.h>
 /*temporary mains*/
-int _main(void);
-int __main(void);
-int main();
-int getmain();
-int main(void);
-int *main(void);
-void main(void);
+int floss(void);
+int dear(void);
+int pic();
+int get();
+void is(void);
+void em(void);
+void today();
+int bab(void);
+int who(void);
+int phone(void);
 /*not temporary*/
+int main(int argc, char **argv);
 int prompt_nexit(int argc, char **argv);
 /*void free_info(info_t *info, int all);*/
 /*void set_info(info_t *info, char **av);*/
@@ -42,4 +46,5 @@ int prompt_nexit(int argc, char **argv);
 /*int _myenv(info_t *info);*/
 /*int _putchar(char c);*/
 /*void remove_comments(char *buf);*/
+ 
 #endif

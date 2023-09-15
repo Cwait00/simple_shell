@@ -1,6 +1,6 @@
 #include "main_shell.h"
 /**
- * main - function for beginning of simple shell
+ * prompt_nexit - prints the prommpt and handles CTRL+D
  * @argc: argument count
  * @argv: argument vector
  * Return: 0 upon success

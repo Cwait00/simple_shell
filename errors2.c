@@ -1,6 +1,6 @@
 #include "main_shell.h"
 
-void main (void)
+void em(void)
 {
 }
 /**

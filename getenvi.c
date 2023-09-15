@@ -1,5 +1,5 @@
 #include "main_shell.h"
-int getmain()
+int get()
 {
 	return (0);
 }
