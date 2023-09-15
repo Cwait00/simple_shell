@@ -1,9 +1,6 @@
 #include "main_shell.h"
 
-int dear(void)
-{
-	return (0);
-}
+
 /**
  **_strncpy - String copy
  *@dest: Destination string
@@ -11,7 +8,7 @@ int dear(void)
  *@n: amount of characters to be copied
  *Return: concatenated string
  */
-/*char *_strncpy(char *dest, char *src, int n)
+char *_strncpy(char *dest, char *src, int n)
 {
 	int a, j;
 	char *s = dest;
@@ -32,7 +29,7 @@ int dear(void)
 		}
 	}
 	return (s);
-}*/
+}
 
 /**
  **_strncat - Two strings concatenates.

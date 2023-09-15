@@ -17,7 +17,7 @@ int prompt_nexit(int argc, char **argv)
 
 	while (1)
 	{
-		printf("%s ", interpreter);
+		created_puts1(interpreter);
 
 		if (getline(&shell_lineptr, &n, stdin) == -1)
 		{
@@ -28,7 +28,7 @@ int prompt_nexit(int argc, char **argv)
 			perror(program_name);
 			return (1);
 		}
-		printf("%s\n", shell_lineptr);
+		created_puts1(shell_lineptr);
 		/*because getline allocates memory, it must be freed*/
 		free(shell_lineptr);
 		shell_lineptr = NULL;

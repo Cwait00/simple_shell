@@ -2,7 +2,7 @@
 #define MAIN_SHELL_H
 #include <stdio.h>
 #include <stddef.h>
-#include <strings.h>
+#include <string.h>
 #include <unistd.h>
 #include <stdlib.h>
 /*temporary mains*/
@@ -17,12 +17,14 @@ int bab(void);
 int who(void);
 int phone(void);
 /*not temporary*/
+void created_puts1(const char *str);
 int main(int argc, char **argv);
+int parsing_strtok(void);
 int prompt_nexit(int argc, char **argv);
 /*void free_info(info_t *info, int all);*/
 /*void set_info(info_t *info, char **av);*/
 /*void clear_info(info_t *info);*/
-/*char *_strncpy(char *dest, char *src, int n);*/
+char *_strncpy(char *dest, char *src, int n);
 /*char *_strncat(char *dest, char *src, int n);*/
 /*char *_strchr(char *s, char c);*/
 /*char **get_environ(info_t *info);*/
@@ -44,7 +46,7 @@ int prompt_nexit(int argc, char **argv);
 /*int _mysetenv(info_t *info);*/
 /*char *_getenv(info_t *info, const char *name);*/
 /*int _myenv(info_t *info);*/
-/*int _putchar(char c);*/
+int _putchar(char c);
 /*void remove_comments(char *buf);*/
  
 #endif
