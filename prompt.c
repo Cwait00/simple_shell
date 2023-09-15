@@ -5,7 +5,7 @@
  * @argv: argument vector
  * Return: 0 upon success
  */
-int main(int argc, char **argv)
+int prompt_nexit(int argc, char **argv)
 {
 	/*ssize_t getline(char **lineptr, size_t *n, FILE *stream)*/
 	char *shell_lineptr = NULL;

@@ -2,11 +2,25 @@
 #define MAIN_SHELL_H
 #include <stdio.h>
 #include <stddef.h>
+#include <strings.h>
+#include <unistd.h>
 #include <stdlib.h>
-
-int main(int argc, char **argv);
+/*temporary mains*/
+int _main(void);
+int __main(void);
 int main();
 int getmain();
+int main(void);
+int *main(void);
+void main(void);
+/*not temporary*/
+int prompt_nexit(int argc, char **argv);
+/*void free_info(info_t *info, int all);*/
+/*void set_info(info_t *info, char **av);*/
+/*void clear_info(info_t *info);*/
+/*char *_strncpy(char *dest, char *src, int n);*/
+/*char *_strncat(char *dest, char *src, int n);*/
+/*char *_strchr(char *s, char c);*/
 /*char **get_environ(info_t *info);*/
 /*int _unsetenv(info_t *info, char *var);*/
 /*int _setenv(info_t *info, char *var, char *value);*/
@@ -26,5 +40,6 @@ int getmain();
 /*int _mysetenv(info_t *info);*/
 /*char *_getenv(info_t *info, const char *name);*/
 /*int _myenv(info_t *info);*/
-
+/*int _putchar(char c);*/
+/*void remove_comments(char *buf);*/
 #endif

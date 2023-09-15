@@ -1,23 +1,27 @@
 #include "main_shell.h"
 
+int _main(void)
+{
+	return (0);
+}
 /**
  * clear_info - Initializes info_t structure
  * @info: structure address
  */
-void clear_info(info_t *info)
+/*void clear_info(info_t *info)
 {
 	info->arg = NULL;
 	info->argv = NULL;
 	info->path = NULL;
 	info->argc = 0;
-}
+}*/
 
 /**
  * set_info - initializes info_t structure
  * @info: structure address
  * @av: argument vector
  */
-void set_info(info_t *info, char **av)
+/*void set_info(info_t *info, char **av)
 {
 	int a = 0;
 
@@ -41,14 +45,14 @@ void set_info(info_t *info, char **av)
 		replace_alias(info);
 		replace_vars(info);
 	}
-}
+}*/
 
 /**
  * free_info - frees info_t structure fields
  * @info: structure address
  * @all: if freeing all fields, true.
  */
-void free_info(info_t *info, int all)
+/*void free_info(info_t *info, int all)
 {
 	ffree(info->argv);
 	info->argv = NULL;
@@ -70,4 +74,4 @@ void free_info(info_t *info, int all)
 			close(info->readfd);
 		_putchar(BUF_FLUSH);
 	}
-}
+}*/
