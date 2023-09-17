@@ -6,7 +6,7 @@
  * Return: history file containing allocated string.
  */
 
-char *get_history_file(info_t *info)
+/*char *get_history_file(info_t *info)
 {
 	char *buf, *dir;
 
@@ -22,13 +22,13 @@ char *get_history_file(info_t *info)
 	_strcat(buf, HIST_FILE);
 	return (buf);
 }
-
+*/
 /**
  * write_history - Appends to an existing file or creates a file
  * @info: the parameter structure
  * Return: 1 on success, else -1
  */
-int write_history(info_t *info)
+/*int write_history(info_t *info)
 {
 	ssize_t d;
 	char *filename = get_history_file(info);
@@ -50,13 +50,13 @@ int write_history(info_t *info)
 	close(d);
 	return (1);
 }
-
+*/
 /**
  * read_history - reads history.
  * @info: parameter structure
  * Return: histcount on success, 0 otherwise
  */
-int read_history(info_t *info)
+/*int read_history(info_t *info)
 {
 	int a, last = 0, linecount = 0;
 	ssize_t d, rdlen, fsize = 0;
@@ -97,7 +97,7 @@ int read_history(info_t *info)
 		delete_node_at_index(&(info->history), 0);
 	renumber_history(info);
 	return (info->histcount);
-}
+}*/
 
 /**
  * build_history_list - history linked list
@@ -106,7 +106,7 @@ int read_history(info_t *info)
  * @linecount: history linecount, histcount
  * Return: Always 0 (Success)
  */
-int build_history_list(info_t *info, char *buf, int linecount)
+/*int build_history_list(info_t *info, char *buf, int linecount)
 {
 	list_t *node = NULL;
 
@@ -117,14 +117,14 @@ int build_history_list(info_t *info, char *buf, int linecount)
 	if (!info->history)
 		info->history = node;
 	return (0);
-}
+}*/
 
 /**
  * renumber_history - renumbers the history
  * @info: contains potential arguments. Used to maintain
  * Return: to the new histcount
  */
-int renumber_history(info_t *info)
+/*int renumber_history(info_t *info)
 {
 	list_t *node = info->history;
 	int a = 0;
@@ -135,4 +135,4 @@ int renumber_history(info_t *info)
 		node = node->next;
 	}
 	return (info->histcount = a);
-}
+}*/

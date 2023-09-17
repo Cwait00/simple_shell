@@ -5,8 +5,10 @@
  */
 int main(int argc, char **argv)
 {
-	prompt_nexit(argc, argv);
-	parsing_strtok();
+	while (prompt_nexit(argc, argv))
+	{
+		parsing_strtok();
+	}
 
 	return (0);
 }

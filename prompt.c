@@ -9,7 +9,7 @@ int prompt_nexit(int argc, char **argv)
 {
 	/*ssize_t getline(char **lineptr, size_t *n, FILE *stream)*/
 	char *shell_lineptr = NULL;
-	char interpreter[] = "simple_shell:";
+	char interpreter[] = "simple_shell: ";
 	size_t n = 0;
 	char *program_name = argv[0];
 

@@ -16,6 +16,10 @@ void today();
 int bab(void);
 int who(void);
 int phone(void);
+void frr(void);
+void cm(void);
+void add(void);
+void len(void);
 /*not temporary*/
 void created_puts1(const char *str);
 int main(int argc, char **argv);
