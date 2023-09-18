@@ -21,6 +21,7 @@ void cm(void);
 void add(void);
 void len(void);
 /*not temporary*/
+int cmd_execute(char **argv);
 void created_puts1(const char *str);
 int main(int argc, char **argv);
 int parsing_strtok(void);

@@ -25,15 +25,32 @@ int parsing_strtok(void)
 	if (cpy_lineptr == NULL)
 	{
 		perror("Memory allocation not successful");
-		free(lineptr); /*always free original*/
-		return(-1);
+		free(lineptr);/*always free original*/
+		return (-1);
 	}
 	_strncpy(cpy_lineptr, lineptr, read_bytes);
-	
+
 	for (strtoken = strtok(cpy_lineptr, delim); strtoken != NULL;
-				strtoken = strtok(NULL, delim));
+			strtoken = strtok(NULL, delim))
 	{
 		created_puts1(strtoken);
+	}
+	return (0);
+}
+
+/**
+ * cmd_execute - created to execute commands
+ * @argv: argument vector, used to identify commands
+ * Return: str of command
+ */
+int cmd_execute(char **argv)
+{
+	char *cmd = argv[0];
+
+	if (execve(cmd, argv, NULL) == -1)
+	{
+		perror("Error: Command not found");
+		return (99);
 	}
 	return (0);
 }

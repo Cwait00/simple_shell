@@ -5,9 +5,17 @@
  */
 int main(int argc, char **argv)
 {
-	while (prompt_nexit(argc, argv))
+	int shell_printing = 0;
+
+	while (!shell_printing)
 	{
-		parsing_strtok();
+		shell_printing = prompt_nexit(argc, argv);
+
+		if (!shell_printing)
+		{
+			parsing_strtok();
+			cmd_execute(argv);
+		}
 	}
 
 	return (0);

@@ -34,7 +34,9 @@ int prompt_nexit(int argc, char **argv)
 		shell_lineptr = NULL;
 	}
 	/*free again for any memory not freed before*/
-	free(shell_lineptr);
-
+	if (shell_lineptr != NULL)
+	{
+		free(shell_lineptr);
+	}
 	return (0);
 }
