@@ -8,7 +8,7 @@ int main(int argc, char **argv)
 {
 	int shell_printing = 0;
 
-	while (!shell_printing)
+	while (1)
 	{
 		shell_printing = prompt_nexit(argc, argv);
 

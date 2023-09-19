@@ -1,11 +1,16 @@
 #ifndef MAIN_SHELL_H
 #define MAIN_SHELL_H
+
+#define EOF (-1)
+
+#include <sys/wait.h>
 #include <stdio.h>
 #include <stddef.h>
 #include <string.h>
 #include <unistd.h>
 #include <stdlib.h>
 /*temporary mains*/
+int ls(int ac, char **av);
 int floss(void);
 int dear(void);
 int pic();
