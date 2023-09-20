@@ -1,22 +1,19 @@
 #include "main_shell.h"
 
-void em(void)
-{
-}
 /**
  * _erratoi - A string to an integer converts
  * @s: String to be converted
  * Return: 0 if no num in string, converted num otherwise
  * -1 on error
  */
-/*int _erratoi(char *s)
+int _erratoi(char *s)
 {
 	int a = 0;
 	unsigned long int result = 0;
 
 	if (*s == '+')
-		s++;*/  /* TODO: why does this make main return 255? */
-	/*for (a = 0;  s[a] != '\0'; a++)
+		s++; /* TODO: why does this make main return 255? */
+	for (a = 0;  s[a] != '\0'; a++)
 	{
 		if (s[a] >= '0' && s[a] <= '9')
 		{
@@ -29,7 +26,7 @@ void em(void)
 			return (-1);
 	}
 	return (result);
-}*/
+}
 
 /**
  * print_error - an error message
@@ -38,7 +35,7 @@ void em(void)
  * Return: 0 if no num in string, converted num otherwise
  * -1 on error
  */
-/*void print_error(info_t *info, char *estr)
+void print_error(info_t *info, char *estr)
 {
 	_eputs(info->fname);
 	_eputs(": ");
@@ -47,7 +44,7 @@ void em(void)
 	_eputs(info->argv[0]);
 	_eputs(": ");
 	_eputs(estr);
-}*/
+}
 
 /**
  * print_d - Prints a decimal (integer) number (base 10)
@@ -55,7 +52,7 @@ void em(void)
  * @fd: The file descriptor to write to
  * Return: num of chars printed
  */
-/*int print_d(int input, int fd)
+int print_d(int input, int fd)
 {
 	int (*__putchar)(char) = _putchar;
 	int a, count = 0;
@@ -85,7 +82,7 @@ void em(void)
 	count++;
 
 	return (count);
-}*/
+}
 
 /**
  * convert_number - converter function, a clone of itoa
@@ -94,7 +91,7 @@ void em(void)
  * @flags: Flags
  * Return: String
  */
-/*char *convert_number(long int num, int base, int flags)
+char *convert_number(long int num, int base, int flags)
 {
 	static char *array;
 	static char buffer[50];
@@ -120,14 +117,14 @@ void em(void)
 	if (sign)
 		*--ptr = sign;
 	return (ptr);
-}*/
+}
 
 /**
  * remove_comments - replaces first instance of '#' with '\0'
  * @buf: address of the string to modify
  * Return: Always 0;
  */
-/*void remove_comments(char *buf)
+void remove_comments(char *buf)
 {
 	int a;
 
@@ -137,4 +134,4 @@ void em(void)
 			buf[a] = '\0';
 			break;
 		}
-}*/
+}

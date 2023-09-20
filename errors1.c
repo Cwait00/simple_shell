@@ -1,14 +1,11 @@
 #include "main_shell.h"
 
-void is(void)
-{
-}
 /**
  * _eputs - Input string
  * @str: The string
  * Return: Nothing
  */
-/*void _eputs(char *str)
+void _eputs(char *str)
 {
 	int j = 0;
 
@@ -19,7 +16,7 @@ void is(void)
 		_eputchar(str[j]);
 		j++;
 	}
-}*/
+}
 
 /**
  * _eputchar - Character c to stderr
@@ -27,7 +24,7 @@ void is(void)
  * Return: 1 On success.
  * On error, -1 is returned, and errno is set appropriately.
  */
-/*int _eputchar(char c)
+int _eputchar(char c)
 {
 	static int j;
 	static char buf[WRITE_BUF_SIZE];
@@ -40,7 +37,7 @@ void is(void)
 	if (c != BUF_FLUSH)
 		buf[j++] = c;
 	return (1);
-}*/
+}
 
 /**
  * _putfd - Character c to given fd
@@ -49,7 +46,7 @@ void is(void)
  * Return: 1 On success
  * On error, -1 is returned, and errno is set appropriately.
  */
-/*int _putfd(char c, int fd)
+int _putfd(char c, int fd)
 {
 	static int j;
 	static char buf[WRITE_BUF_SIZE];
@@ -62,7 +59,7 @@ void is(void)
 	if (c != BUF_FLUSH)
 		buf[j++] = c;
 	return (1);
-}*/
+}
 
 /**
  * _putsfd - Input string
@@ -70,7 +67,7 @@ void is(void)
  * @fd: File descriptor to write to
  * Return: num of charectors put
  */
-/*int _putsfd(char *str, int fd)
+int _putsfd(char *str, int fd)
 {
 	int a = 0;
 
@@ -81,4 +78,4 @@ void is(void)
 		a += _putfd(*str++, fd);
 	}
 	return (a);
-}*/
+}
