@@ -1,18 +1,21 @@
 #include "main_shell.h"
-
-void today()
+/**
+ * today - empty function that temp
+ * Return: has no return
+ **/
+void today(void)
 {
-
 }
 /**
  * interactive - Shell is interactive mode and returns if true
  * @info: struct address
  * Return: 1 if interactive mode, 0 otherwise
  */
-/*int interactive(info_t *info)
-{
+/*int interactive(info_t *info)*/
+/*{
 	return (isatty(STDIN_FILENO) && info->readfd <= 2);
-}*/
+}
+*/
 
 /**
  * is_delim - checks if is a delimeter
@@ -20,13 +23,14 @@ void today()
  * @delim: The string of the delimeter
  * Return: 1 if true, 0 if false
  */
-/*int is_delim(char c, char *delim)
-{
+/*int is_delim(char c, char *delim)*/
+/*{
 	while (*delim)
 		if (*delim++ == c)
 			return (1);
 	return (0);
-}*/
+}
+*/
 
 /**
  * _isalpha - Alphabetic character
@@ -34,13 +38,14 @@ void today()
  * Return: 1 if c is alphabetic, 0 otherwise
  */
 
-/*int _isalpha(int c)
-{
+/*int _isalpha(int c)*/
+/*{
 	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 		return (1);
 	else
 		return (0);
-}*/
+}
+*/
 
 /**
  * _atoi - A string to an integer
@@ -48,8 +53,8 @@ void today()
  * Return: 0 if no num in string, converted number otherwise
  */
 
-/*int _atoi(char *s)
-{
+/*int _atoi(char *s)*/
+/*{
 	int i, sign = 1, flag = 0, output;
 	unsigned int r = 0;
 
@@ -74,4 +79,5 @@ void today()
 		output = r;
 
 	return (output);
-}*/
+}
+*/

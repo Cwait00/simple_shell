@@ -21,7 +21,8 @@ int prompt_nexit(int argc, char **argv)
 
 		if (getline(&shell_lineptr, &n, stdin) == -1)
 		{
-			if (shell_lineptr != NULL)
+			/*if (feof(stdin))*/
+			if (feof(stdin))
 			{/*handling the ctrl + D*/
 				break;
 			}
@@ -30,7 +31,6 @@ int prompt_nexit(int argc, char **argv)
 		}
 		created_puts1(shell_lineptr);
 		/*because getline allocates memory, it must be freed*/
-		free(shell_lineptr);
 		shell_lineptr = NULL;
 	}
 	/*free again for any memory not freed before*/

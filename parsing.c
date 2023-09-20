@@ -18,7 +18,7 @@ int parsing_strtok(void)
 	{
 		if (read_bytes == (size_t)EOF)
 		{
-			if (shell_lineptr != NULL)
+			if (feof(stdin))
 			{
 				break;
 			}
