@@ -1,18 +1,14 @@
-#include "main_shell.h"
+#include "maint_shell.h"
 
 /**
- * main - entry point of the program.
+ * main - entry point
  * @ac: argument count
  * @av: argument vector
- * Return: 0 (Success), 1 if error
+ * Return: 0 on success, 1 on error
  */
-int ls(int ac, char **av)
+int main(int ac, char **av)
 {
-	(void)ac;
-	(void)av;
-	return (0);
-}
-	/*info_t info[] = { INFO_INIT };
+	info_t info[] = { INFO_INIT };
 	int d = 2;
 
 	asm ("mov %1, %0\n\t"
@@ -44,4 +40,4 @@ int ls(int ac, char **av)
 	read_history(info);
 	hsh(info, av);
 	return (EXIT_SUCCESS);
-}*/
+}

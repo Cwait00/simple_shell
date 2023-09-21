@@ -13,11 +13,11 @@
 int ls(int ac, char **av);
 int floss(void);
 int dear(void);
-int pic();
-int get();
+int pic(void);
+int get(void);
 void is(void);
 void em(void);
-void today();
+void today(void);
 int bab(void);
 int who(void);
 int phone(void);
@@ -58,5 +58,5 @@ char *_strncpy(char *dest, char *src, int n);
 /*int _myenv(info_t *info);*/
 int _putchar(char c);
 /*void remove_comments(char *buf);*/
- 
+
 #endif
