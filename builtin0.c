@@ -1,9 +1,5 @@
-#include "main_shell.h"
+#include "maint_shell.h"
 
-int bab(void)
-{
-	return(0);
-}
 /**
  * _myexit - Exits the shell
  * @info: Contains potential arguments. Used to maintain
@@ -11,12 +7,12 @@ int bab(void)
  * Return: Exits a given exit status
  * (0) if info.argv[0] != "exit"
  */
-/*int _myexit(info_t *info)
+int _myexit(info_t *info)
 {
 	int exit;
 
-	if (info->argv[1])*/ /* If there is an exit arguement */
-	/*{
+	if (info->argv[1]) /* If there is an exit arguement */
+	{
 		exit = _erratoi(info->argv[1]);
 		if (exit == -1)
 		{
@@ -31,7 +27,7 @@ int bab(void)
 	}
 	info->err_num = -1;
 	return (-2);
-}*/
+}
 
 /**
  * _mycd - The current directory of the process changes
@@ -39,7 +35,7 @@ int bab(void)
  * constant function prototype.
  * Return: Always 0 (Success)
  */
-/*int _mycd(info_t *info)
+int _mycd(info_t *info)
 {
 	char *s, *dir, buffer[1024];
 	int chdir_ret;
@@ -51,8 +47,8 @@ int bab(void)
 	{
 		dir = _getenv(info, "HOME=");
 		if (!dir)
-			chdir_ret =*/ /* TODO: what should this be? */
-				/*chdir((dir = _getenv(info, "PWD=")) ? dir : "/");
+			chdir_ret = /* TODO: what should this be? */
+				chdir((dir = _getenv(info, "PWD=")) ? dir : "/");
 		else
 			chdir_ret = chdir(dir);
 	}
@@ -65,8 +61,8 @@ int bab(void)
 			return (1);
 		}
 		_puts(_getenv(info, "OLDPWD=")), _putchar('\n');
-		chdir_ret =*/ /* TODO: what should this be? */
-			/*chdir((dir = _getenv(info, "OLDPWD=")) ? dir : "/");
+		chdir_ret = /* TODO: what should this be? */
+			chdir((dir = _getenv(info, "OLDPWD=")) ? dir : "/");
 	}
 	else
 		chdir_ret = chdir(info->argv[1]);
@@ -81,7 +77,7 @@ int bab(void)
 		_setenv(info, "PWD", getcwd(buffer, 1024));
 	}
 	return (0);
-}*/
+}
 
 /**
  * _myhelp - changes the current directory of the process
@@ -89,13 +85,13 @@ int bab(void)
  * constant function prototype.
  * Return: Always 0 (Success)
  */
-/*int _myhelp(info_t *info)
+int _myhelp(info_t *info)
 {
 	char **arg_array;
 
 	arg_array = info->argv;
 	_puts("help call works. Function not yet implemented \n");
 	if (0)
-		_puts(*arg_array);*/ /* temp att_unused workaround */
-	/*return (0);
-}*/
+		_puts(*arg_array); /* temp att_unused workaround */
+	return (0);
+}

@@ -60,4 +60,8 @@ char *_strncpy(char *dest, char *src, int n);
 /*int _myenv(info_t *info);*/
 int _putchar(char c);
 /*void remove_comments(char *buf);*/
+<<<<<<< HEAD
+=======
+
+>>>>>>> 63fe436cd35645e6351e63238eb005f7839b9733
 #endif

@@ -1,9 +1,5 @@
-#include "main_shell.h"
+#include "maint_shell.h"
 
-int who(void)
-{
-	return (0);
-}
 /**
  * _myhistory - displays the history list, one command by line, preceded
  * with line numbers, starting at 0.
@@ -11,11 +7,11 @@ int who(void)
  * constant function prototype.
  *  Return: Always 0
  */
-/*int _myhistory(info_t *info)
+int _myhistory(info_t *info)
 {
 	print_list(info->history);
 	return (0);
-}*/
+}
 
 /**
  * unset_alias - Sets alias to string
@@ -23,7 +19,7 @@ int who(void)
  * @str: The string alias
  * Return: Always 0 on success, 1 on error
  */
-/*int unset_alias(info_t *info, char *str)
+int unset_alias(info_t *info, char *str)
 {
 	char *p, c;
 	int r;
@@ -37,7 +33,7 @@ int who(void)
 		get_node_index(info->alias, node_starts_with(info->alias, str, -1)));
 	*p = c;
 	return (r);
-}*/
+}
 
 /**
  * set_alias - Sets alias to string
@@ -45,7 +41,7 @@ int who(void)
  * @str: The string alias
  * Return: Always 0 on success, 1 on error
  */
-/*int set_alias(info_t *info, char *str)
+int set_alias(info_t *info, char *str)
 {
 	char *p;
 
@@ -58,13 +54,13 @@ int who(void)
 	unset_alias(info, str);
 	return (add_node_end(&(info->alias), str, 0) == NULL);
 }
-*/
+
 /**
  * print_alias - Alias string
  * @node: The alias node
  * Return: Always 0 on success, 1 on error
  */
-/*int print_alias(list_t *node)
+int print_alias(list_t *node)
 {
 	char *p = NULL, *a = NULL;
 
@@ -79,7 +75,7 @@ int who(void)
 		return (0);
 	}
 	return (1);
-}*/
+}
 
 /**
  * _myalias - imitates the alias builtin (man alias)
@@ -87,7 +83,7 @@ int who(void)
  * constant function prototype.
  *  Return: Always 0 (Success)
  */
-/*int _myalias(info_t *info)
+int _myalias(info_t *info)
 {
 	int i = 0;
 	char *p = NULL;
@@ -113,4 +109,4 @@ int who(void)
 	}
 
 	return (0);
-}*/
+}

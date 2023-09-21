@@ -1,7 +1,12 @@
+<<<<<<< HEAD
 #include "main_shell.h"
 void hsh(void)
 {
 }
+=======
+#include "maint_shell.h"
+
+>>>>>>> 63fe436cd35645e6351e63238eb005f7839b9733
 /**
  * hsh - main shell loop function.
  * @info: The parameter & return info structure

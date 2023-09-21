@@ -1,7 +1,12 @@
+<<<<<<< HEAD
 #include "main_shell.h"
 void str(void)
 {
 }
+=======
+#include "maint_shell.h"
+
+>>>>>>> 63fe436cd35645e6351e63238eb005f7839b9733
 /**
  * _strlen - calculates the length of a given string
  * @s: checks the length of the string

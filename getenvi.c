@@ -1,15 +1,12 @@
-#include "main_shell.h"
-int get()
-{
-	return (0);
-}
+#include "maint_shell.h"
+
 /**
  * get_environ - Returns the string array copy of the environ
  * @info: Contains potential arguments. To maintain
  * constant function prototype.
  * Return: Always 0 (Success)
  */
-/*char **get_environ(info_t *info)
+char **get_environ(info_t *info)
 {
 	if (!info->environ || info->env_changed)
 	{
@@ -18,7 +15,7 @@ int get()
 	}
 
 	return (info->environ);
-}*/
+}
 
 /**
  * _unsetenv - Removes an environment variable
@@ -27,7 +24,7 @@ int get()
  *  Return: 1 on delete, 0 otherwise
  * @var: String env var property
  */
-/*int _unsetenv(info_t *info, char *var)
+int _unsetenv(info_t *info, char *var)
 {
 	list_t *node = info->env;
 	size_t i = 0;
@@ -50,7 +47,7 @@ int get()
 		i++;
 	}
 	return (info->env_changed);
-}*/
+}
 
 /**
  * _setenv - Initialize a new environment variable,
@@ -61,7 +58,7 @@ int get()
  * @value: String env var value
  *  Return: Always 0 (Success)
  */
-/*int _setenv(info_t *info, char *var, char *value)
+int _setenv(info_t *info, char *var, char *value)
 {
 	char *buf = NULL;
 	list_t *node;
@@ -93,4 +90,4 @@ int get()
 	free(buf);
 	info->env_changed = 1;
 	return (0);
-}*/
+}
