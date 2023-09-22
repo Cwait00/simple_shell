@@ -1,20 +1,14 @@
-<<<<<<< HEAD
-#include "main_shell.h"
-void share(void);
-=======
-#include "maint_shell.h"
->>>>>>> 63fe436cd35645e6351e63238eb005f7839b9733
+/*#include "main_shell.h"*/
 
-void share(void)
-{
-}
+#include "maint_shell.h"
+
 /**
  * _strcpy - Copies a string from the src to the dest
  * @dest: destination
  * @src: source
  * Return: pointer to the begining of the dest string
  */
-/*char *_strcpy(char *dest, char *src)
+char *_strcpy(char *dest, char *src)
 {
 	int h = 0;
 
@@ -23,18 +17,18 @@ void share(void)
 	while (src[h])
 	{
 		dest[h] = src[h];
-		i++;
+		h++;
 	}
 	dest[h] = 0;
 	return (dest);
-}*/
+}
 
 /**
  * _strdup - duplicates a given string
  * @str: the string to duplicate as its argument
  * Return: pointer to the duplicated string 'ret'
  */
-/*char *_strdup(const char *str)
+char *_strdup(const char *str)
 {
 	int length = 0;
 	char *ret;
@@ -49,14 +43,14 @@ void share(void)
 	for (length++; length--;)
 		ret[length] = *--str;
 	return (ret);
-}*/
+}
 
 /**
  * _puts - prints a string to the standard output
  * @str: the string to be printed as its argument
  * Return: Nothing
  */
-/*void _puts(char *str)
+void _puts(char *str)
 {
 	int o = 0;
 
@@ -68,14 +62,14 @@ void share(void)
 		o++;
 	}
 }
-*/
+
 /**
  * _putchar - writes the character c to the std output
  * @c: The character to print as its argument
  * Return: if success 1.
  * if error, -1 is returned, and errno is set appropriately.
  */
-/*int _putchar(char c)
+int _putchar(char c)
 {
 	static int q;
 	static char buf[WRITE_BUF_SIZE];
@@ -88,4 +82,4 @@ void share(void)
 	if (c != BUF_FLUSH)
 		buf[q++] = c;
 	return (1);
-}*/
+}

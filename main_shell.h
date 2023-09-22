@@ -11,9 +11,7 @@
 #include <stdlib.h>
 /*temporary mains*/
 void str(void);
-void hsh(void);
 int ls(int ac, char **av);
-
 int dear(void);
 int pic(void);
 int get(void);
