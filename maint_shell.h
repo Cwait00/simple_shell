@@ -110,6 +110,8 @@ typedef struct builtin
 	int (*func)(info_t *);
 } builtin_table;
 
+/* toem shellt.c */
+int shellmain(int ac, char **av);
 
 /* toem_shell_loop.c */
 int hsh(info_t *, char **);
@@ -141,7 +143,20 @@ char *_strcat(char *, char *);
 char *_strcpy(char *, char *);
 char *_strdup(const char *);
 void _puts(char *);
-int _putchar(char);
+int _putchar(char c);
+
+/*_putchar*/
+int _pputchar(char c);
+
+/* toem myputs.c*/
+void created_puts1(const char *str);
+
+/* toem  parsing.c*/
+int parsing_strtok(void);
+int cmd_execute(char **argv);
+
+/* toem prompt.c*/
+int prompt_nexit(int argc, char **argv);
 
 /* toem_exit.c */
 char *_strncpy(char *, char *, int);

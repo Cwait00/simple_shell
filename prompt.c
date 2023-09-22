@@ -1,4 +1,4 @@
-#include "main_shell.h"
+#include "maint_shell.h"
 /**
  * prompt_nexit - prints the prommpt and handles CTRL+D
  * @argc: argument count
@@ -17,7 +17,7 @@ int prompt_nexit(int argc, char **argv)
 
 	while (1)
 	{
-		created_puts1(interpreter);
+		_puts(interpreter);
 
 		if (getline(&shell_lineptr, &n, stdin) == -1)
 		{
@@ -29,7 +29,7 @@ int prompt_nexit(int argc, char **argv)
 			perror(program_name);
 			return (1);
 		}
-		created_puts1(shell_lineptr);
+		_puts(shell_lineptr);
 		/*because getline allocates memory, it must be freed*/
 		shell_lineptr = NULL;
 	}

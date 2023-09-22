@@ -1,4 +1,4 @@
-#include "main_shell.h"
+#include "maint_shell.h"
 /**
  * created_puts1 - prints a complete string to stdio
  * @str: string to be printed

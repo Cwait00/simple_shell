@@ -1,12 +1,12 @@
 #include "maint_shell.h"
 
 /**
- * main - entry point
+ * main - function for creating a shell program
  * @ac: argument count
  * @av: argument vector
  * Return: 0 on success, 1 on error
  */
-int main(int ac, char **av)
+int shellmain(int ac, char **av)
 {
 	info_t info[] = { INFO_INIT };
 	int d = 2;
