@@ -1,19 +1,13 @@
-<<<<<<< HEAD
-#include "main_shell.h"
-void hsh(void)
-{
-}
-=======
+/*#include "main_shell.h"*/
 #include "maint_shell.h"
 
->>>>>>> 63fe436cd35645e6351e63238eb005f7839b9733
 /**
  * hsh - main shell loop function.
  * @info: The parameter & return info structure
  * @av: The argu vector from main()
  * Return: 0 (success), 1 if error, or error code.
  */
-/*int hsh(info_t *info, char **av)
+int hsh(info_t *info, char **av)
 {
 	ssize_t r = 0;
 	int builtin_ret = 0;
@@ -47,7 +41,7 @@ void hsh(void)
 		exit(info->err_num);
 	}
 	return (builtin_ret);
-}*/
+}
 
 /**
  * find_builtin - Finds a builtin
@@ -57,7 +51,7 @@ void hsh(void)
  * 1 if builtin found but not successful,
  * 2 if builtin signals exit()
  */
-/*int find_builtin(info_t *info)
+int find_builtin(info_t *info)
 {
 	int i, built_in_ret = -1;
 	builtin_table builtintbl[] = {
@@ -80,14 +74,14 @@ void hsh(void)
 			break;
 		}
 	return (built_in_ret);
-}*/
+}
 
 /**
  * find_cmd - finds a command in PATH
  * @info: the parameter & return info structure
  * Return: void
  */
-/*void find_cmd(info_t *info)
+void find_cmd(info_t *info)
 {
 	char *path = NULL;
 	int i, z;
@@ -121,22 +115,22 @@ void hsh(void)
 			print_error(info, "not found\n");
 		}
 	}
-}*/
+}
 
 /**
  * fork_cmd - forks an execute thread to run cmd
  * @info: The parameter and return info structure
  * Return: void
  */
-/*void fork_cmd(info_t *info)
+void fork_cmd(info_t *info)
 {
 	pid_t child_pid;
 
 	child_pid = fork();
 	if (child_pid == -1)
-	{*/
+	{
 		/* TODO: PUT ERROR FUNCTION */
-		/*perror("Error:");
+		perror("Error:");
 		return;
 	}
 	if (child_pid == 0)
@@ -147,9 +141,9 @@ void hsh(void)
 			if (errno == EACCES)
 				exit(126);
 			exit(1);
-		}*/
+		}
 		/* TODO: PUT ERROR FUNCTION */
-	/*}
+	}
 	else
 	{
 		wait(&(info->status));
@@ -160,4 +154,4 @@ void hsh(void)
 				print_error(info, "Permission denied\n");
 		}
 	}
-}*/
+}

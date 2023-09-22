@@ -13,7 +13,7 @@
 void str(void);
 void hsh(void);
 int ls(int ac, char **av);
-int floss(void);
+
 int dear(void);
 int pic(void);
 int get(void);
@@ -59,9 +59,6 @@ char *_strncpy(char *dest, char *src, int n);
 /*char *_getenv(info_t *info, const char *name);*/
 /*int _myenv(info_t *info);*/
 int _putchar(char c);
-/*void remove_comments(char *buf);*/
-<<<<<<< HEAD
-=======
+/*void remove_comments(char *buffer);*/
 
->>>>>>> 63fe436cd35645e6351e63238eb005f7839b9733
 #endif
