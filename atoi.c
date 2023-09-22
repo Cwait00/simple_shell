@@ -1,12 +1,5 @@
 <<<<<<< HEAD
 #include "main_shell.h"
-/**
- * today - empty function that temp
- * Return: has no return
- **/
-void today(void)
-{
-}
 =======
 #include "maint_shell.h"
 
@@ -18,11 +11,11 @@ void today(void)
  * Return: 1 if interactive mode, 0 otherwise
  */
 <<<<<<< HEAD
-/*int interactive(info_t *info)*/
-/*{
+int interactive(info_t *info)
+{
 	return (isatty(STDIN_FILENO) && info->readfd <= 2);
 }
-*/
+
 =======
 int interactive(info_t *info)
 {
@@ -37,21 +30,21 @@ int interactive(info_t *info)
  * Return: 1 if true, 0 if false
  */
 <<<<<<< HEAD
-/*int is_delim(char c, char *delim)*/
-/*{
-=======
+int is_delim(char c, char *delim)
+
+======
 int is_delim(char c, char *delim)
 {
->>>>>>> 63fe436cd35645e6351e63238eb005f7839b9733
+>> >> >> 63fe436cd35645e6351e63238eb005f7839b9733
 	while (*delim)
 		if (*delim++ == c)
 			return (1);
 	return (0);
 }
-<<<<<<< HEAD
-*/
-=======
->>>>>>> 63fe436cd35645e6351e63238eb005f7839b9733
+<< << << HEAD
+
+== == ==
+>> >> >> 63fe436cd35645e6351e63238eb005f7839b9733
 
 /**
  * _isalpha - Alphabetic character
@@ -59,22 +52,22 @@ int is_delim(char c, char *delim)
  * Return: 1 if c is alphabetic, 0 otherwise
  */
 
-<<<<<<< HEAD
-/*int _isalpha(int c)*/
-/*{
-=======
+<< << << HEAD
+int _isalpha(int c)
+
+== == ==
 int _isalpha(int c)
 {
->>>>>>> 63fe436cd35645e6351e63238eb005f7839b9733
+>> >`> >> 63fe436cd35645e6351e63238eb005f7839b9733
 	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 		return (1);
 	else
 		return (0);
 }
-<<<<<<< HEAD
-*/
-=======
->>>>>>> 63fe436cd35645e6351e63238eb005f7839b9733
+<< << << HEAD
+
+== == ==
+>> >> >> 63fe436cd35645e6351e63238eb005f7839b9733
 
 /**
  * _atoi - A string to an integer
@@ -82,13 +75,12 @@ int _isalpha(int c)
  * Return: 0 if no num in string, converted number otherwise
  */
 
-<<<<<<< HEAD
-/*int _atoi(char *s)*/
-/*{
-=======
+<< << << HEAD
+int _atoi(char *s)
+== == ==
 int _atoi(char *s)
 {
->>>>>>> 63fe436cd35645e6351e63238eb005f7839b9733
+>> >> >> 63fe436cd35645e6351e63238eb005f7839b9733
 	int i, sign = 1, flag = 0, output;
 	unsigned int r = 0;
 
@@ -114,7 +106,7 @@ int _atoi(char *s)
 
 	return (output);
 }
-<<<<<<< HEAD
-*/
-=======
->>>>>>> 63fe436cd35645e6351e63238eb005f7839b9733
+<< << << HEAD
+
+== == ==
+>> >> >> 63fe436cd35645e6351e63238eb005f7839b9733
