@@ -42,12 +42,14 @@ extern char **environ;
  * @num: the number field
  * @str: a string
  * @next: points to the next node
+ * @environ: pointer to environment data
  */
 typedef struct liststr
 {
 	int num;
 	char *str;
 	struct liststr *next;
+	char **environ; /* returning of the environ vrs as a string */
 } list_t;
 
 /**
@@ -62,7 +64,7 @@ typedef struct liststr
  * @linecount_flag: if on count this line of input
  * @fname: the program filename
  * @env: linked list local copy of environment
- * @envir: custom modified copy of environment from LL env
+ * @environ: custom modified copy of environment from LL env
  * @history: the history node
  * @alias: the alias node
  * @env_changed: on if environment was changed
@@ -111,7 +113,7 @@ typedef struct builtin
 } builtin_table;
 
 /* toem shellt.c */
-int shellmain(int ac, char **av);
+int shell_main(int ac, char **av);
 
 /* toem_shell_loop.c */
 int hsh(info_t *, char **);
@@ -150,13 +152,6 @@ int _pputchar(char c);
 
 /* toem myputs.c*/
 void created_puts1(const char *str);
-
-/* toem  parsing.c*/
-int parsing_strtok(void);
-int cmd_execute(char **argv);
-
-/* toem prompt.c*/
-int prompt_nexit(int argc, char **argv);
 
 /* toem_exit.c */
 char *_strncpy(char *, char *, int);

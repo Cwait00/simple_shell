@@ -6,7 +6,7 @@
  * @av: argument vector
  * Return: 0 on success, 1 on error
  */
-int shellmain(int ac, char **av)
+int main(int ac, char **av)
 {
 	info_t info[] = { INFO_INIT };
 	int d = 2;
